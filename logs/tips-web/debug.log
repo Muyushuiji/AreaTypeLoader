@@ -1,0 +1,162 @@
+2022-03-31 10:34:29,518 [main] INFO  [com.wxxx.gis.GisWebApplication] StartupInfoLogger.java:50 - Starting GisWebApplication on LAPTOP-LNJV07PV with PID 8400 (D:\IdeaProject\gis-web\target\classes started by admin in D:\IdeaProject\gis-web)
+2022-03-31 10:34:29,547 [main] INFO  [com.wxxx.gis.GisWebApplication] SpringApplication.java:647 - No active profile set, falling back to default profiles: default
+2022-03-31 10:34:30,872 [main] WARN  [org.mybatis.spring.mapper.ClassPathMapperScanner] Logger.java:44 - No MyBatis mapper was found in '[com.wxxx.gis.gisweb.mapper]' package. Please check your configuration.
+2022-03-31 10:34:30,874 [main] WARN  [org.mybatis.spring.mapper.ClassPathMapperScanner] Logger.java:44 - No MyBatis mapper was found in '[com.wxxx.gis.gisweb.mapper]' package. Please check your configuration.
+2022-03-31 10:34:31,179 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1ef22dab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-31 10:34:31,640 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:90 - Tomcat initialized with port(s): 7005 (http)
+2022-03-31 10:34:31,669 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-7005"]
+2022-03-31 10:34:31,683 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2022-03-31 10:34:31,684 [main] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2022-03-31 10:34:31,695 [main] INFO  [org.apache.catalina.core.AprLifecycleListener] DirectJDKLog.java:173 - Loaded APR based Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-03-31 10:34:31,695 [main] INFO  [org.apache.catalina.core.AprLifecycleListener] DirectJDKLog.java:173 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-03-31 10:34:31,696 [main] INFO  [org.apache.catalina.core.AprLifecycleListener] DirectJDKLog.java:173 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-03-31 10:34:31,701 [main] INFO  [org.apache.catalina.core.AprLifecycleListener] DirectJDKLog.java:173 - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-03-31 10:34:31,874 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2022-03-31 10:34:31,874 [main] INFO  [org.springframework.web.context.ContextLoader] ServletWebServerApplicationContext.java:284 - Root WebApplicationContext: initialization completed in 2215 ms
+2022-03-31 10:34:31,960 [main] WARN  [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] AbstractApplicationContext.java:557 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'coveredController' defined in file [D:\IdeaProject\gis-web\target\classes\com\wxxx\gis\controller\CoveredController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.wxxx.gis.mapper.CoveredMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-03-31 10:34:31,964 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Stopping service [Tomcat]
+2022-03-31 10:34:31,987 [main] INFO  [o.s.b.a.l.ConditionEvaluationReportLoggingListener] ConditionEvaluationReportLoggingListener.java:136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-03-31 10:34:32,176 [main] ERROR [o.s.b.diagnostics.LoggingFailureAnalysisReporter] LoggingFailureAnalysisReporter.java:40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wxxx.gis.controller.CoveredController required a bean of type 'com.wxxx.gis.mapper.CoveredMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wxxx.gis.mapper.CoveredMapper' in your configuration.
+
+2022-03-31 10:35:18,901 [main] INFO  [com.wxxx.gis.GisWebApplication] StartupInfoLogger.java:50 - Starting GisWebApplication on LAPTOP-LNJV07PV with PID 31452 (D:\IdeaProject\gis-web\target\classes started by admin in D:\IdeaProject\gis-web)
+2022-03-31 10:35:18,906 [main] INFO  [com.wxxx.gis.GisWebApplication] SpringApplication.java:647 - No active profile set, falling back to default profiles: default
+2022-03-31 10:35:20,130 [main] WARN  [org.mybatis.spring.mapper.ClassPathMapperScanner] Logger.java:44 - No MyBatis mapper was found in '[com.wxxx.gis.gisweb.mapper]' package. Please check your configuration.
+2022-03-31 10:35:20,426 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$344ac71b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-31 10:35:20,813 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:90 - Tomcat initialized with port(s): 7005 (http)
+2022-03-31 10:35:20,840 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-7005"]
+2022-03-31 10:35:20,857 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2022-03-31 10:35:20,857 [main] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2022-03-31 10:35:20,868 [main] INFO  [org.apache.catalina.core.AprLifecycleListener] DirectJDKLog.java:173 - Loaded APR based Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-03-31 10:35:20,868 [main] INFO  [org.apache.catalina.core.AprLifecycleListener] DirectJDKLog.java:173 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-03-31 10:35:20,869 [main] INFO  [org.apache.catalina.core.AprLifecycleListener] DirectJDKLog.java:173 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-03-31 10:35:20,873 [main] INFO  [org.apache.catalina.core.AprLifecycleListener] DirectJDKLog.java:173 - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-03-31 10:35:21,071 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2022-03-31 10:35:21,072 [main] INFO  [org.springframework.web.context.ContextLoader] ServletWebServerApplicationContext.java:284 - Root WebApplicationContext: initialization completed in 2109 ms
+2022-03-31 10:35:22,416 [main] INFO  [s.d.s.w.PropertySourcedRequestMappingHandlerMapping] PropertySourcedRequestMappingHandlerMapping.java:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-03-31 10:35:22,574 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-31 10:35:22,833 [main] INFO  [s.d.s.web.plugins.DocumentationPluginsBootstrapper] DocumentationPluginsBootstrapper.java:160 - Context refreshed
+2022-03-31 10:35:22,858 [main] INFO  [s.d.s.web.plugins.DocumentationPluginsBootstrapper] DocumentationPluginsBootstrapper.java:163 - Found 1 custom documentation plugin(s)
+2022-03-31 10:35:22,905 [main] INFO  [s.d.spring.web.scanners.ApiListingReferenceScanner] ApiListingReferenceScanner.java:41 - Scanning for api listing references
+2022-03-31 10:35:22,934 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-7005"]
+2022-03-31 10:35:22,966 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:202 - Tomcat started on port(s): 7005 (http) with context path ''
+2022-03-31 10:35:22,971 [main] INFO  [com.wxxx.gis.GisWebApplication] StartupInfoLogger.java:59 - Started GisWebApplication in 4.797 seconds (JVM running for 6.571)
+2022-03-31 10:35:27,482 [http-nio-7005-exec-2] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-31 10:35:27,483 [http-nio-7005-exec-2] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:524 - Initializing Servlet 'dispatcherServlet'
+2022-03-31 10:35:27,494 [http-nio-7005-exec-2] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:546 - Completed initialization in 11 ms
+2022-03-31 10:35:27,571 [http-nio-7005-exec-2] INFO  [com.zaxxer.hikari.HikariDataSource] HikariDataSource.java:110 - HikariPool-1 - Starting...
+2022-03-31 10:35:27,573 [http-nio-7005-exec-2] WARN  [com.zaxxer.hikari.util.DriverDataSource] DriverDataSource.java:68 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-03-31 10:35:29,128 [http-nio-7005-exec-2] INFO  [com.zaxxer.hikari.HikariDataSource] HikariDataSource.java:123 - HikariPool-1 - Start completed.
+2022-03-31 10:39:36,280 [Thread-13] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-31 10:39:36,284 [Thread-13] INFO  [com.zaxxer.hikari.HikariDataSource] HikariDataSource.java:350 - HikariPool-1 - Shutdown initiated...
+2022-03-31 10:39:36,296 [Thread-13] INFO  [com.zaxxer.hikari.HikariDataSource] HikariDataSource.java:352 - HikariPool-1 - Shutdown completed.
+2022-03-31 10:39:40,876 [main] INFO  [com.wxxx.gis.GisWebApplication] StartupInfoLogger.java:50 - Starting GisWebApplication on LAPTOP-LNJV07PV with PID 28312 (D:\IdeaProject\gis-web\target\classes started by admin in D:\IdeaProject\gis-web)
+2022-03-31 10:39:40,915 [main] INFO  [com.wxxx.gis.GisWebApplication] SpringApplication.java:647 - No active profile set, falling back to default profiles: default
+2022-03-31 10:39:42,113 [main] WARN  [org.mybatis.spring.mapper.ClassPathMapperScanner] Logger.java:44 - No MyBatis mapper was found in '[com.wxxx.gis.gisweb.mapper]' package. Please check your configuration.
+2022-03-31 10:39:42,431 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ea1f1c60] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-31 10:39:42,782 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:90 - Tomcat initialized with port(s): 7005 (http)
+2022-03-31 10:39:42,802 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-7005"]
+2022-03-31 10:39:42,818 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2022-03-31 10:39:42,819 [main] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2022-03-31 10:39:42,828 [main] INFO  [org.apache.catalina.core.AprLifecycleListener] DirectJDKLog.java:173 - Loaded APR based Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-03-31 10:39:42,829 [main] INFO  [org.apache.catalina.core.AprLifecycleListener] DirectJDKLog.java:173 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-03-31 10:39:42,829 [main] INFO  [org.apache.catalina.core.AprLifecycleListener] DirectJDKLog.java:173 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-03-31 10:39:42,832 [main] INFO  [org.apache.catalina.core.AprLifecycleListener] DirectJDKLog.java:173 - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-03-31 10:39:43,020 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2022-03-31 10:39:43,020 [main] INFO  [org.springframework.web.context.ContextLoader] ServletWebServerApplicationContext.java:284 - Root WebApplicationContext: initialization completed in 2046 ms
+2022-03-31 10:39:44,369 [main] INFO  [s.d.s.w.PropertySourcedRequestMappingHandlerMapping] PropertySourcedRequestMappingHandlerMapping.java:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-03-31 10:39:44,570 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-31 10:39:44,835 [main] INFO  [s.d.s.web.plugins.DocumentationPluginsBootstrapper] DocumentationPluginsBootstrapper.java:160 - Context refreshed
+2022-03-31 10:39:44,860 [main] INFO  [s.d.s.web.plugins.DocumentationPluginsBootstrapper] DocumentationPluginsBootstrapper.java:163 - Found 1 custom documentation plugin(s)
+2022-03-31 10:39:44,908 [main] INFO  [s.d.spring.web.scanners.ApiListingReferenceScanner] ApiListingReferenceScanner.java:41 - Scanning for api listing references
+2022-03-31 10:39:44,938 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-7005"]
+2022-03-31 10:39:44,970 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:202 - Tomcat started on port(s): 7005 (http) with context path ''
+2022-03-31 10:39:44,976 [main] INFO  [com.wxxx.gis.GisWebApplication] StartupInfoLogger.java:59 - Started GisWebApplication in 4.883 seconds (JVM running for 6.797)
+2022-03-31 10:41:21,744 [Thread-12] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-31 10:41:46,414 [main] INFO  [com.wxxx.gis.GisWebApplication] StartupInfoLogger.java:50 - Starting GisWebApplication on LAPTOP-LNJV07PV with PID 13592 (D:\IdeaProject\gis-web\target\classes started by admin in D:\IdeaProject\gis-web)
+2022-03-31 10:41:46,424 [main] INFO  [com.wxxx.gis.GisWebApplication] SpringApplication.java:647 - No active profile set, falling back to default profiles: default
+2022-03-31 10:41:48,149 [main] WARN  [org.mybatis.spring.mapper.ClassPathMapperScanner] Logger.java:44 - No MyBatis mapper was found in '[com.wxxx.gis.gisweb.mapper]' package. Please check your configuration.
+2022-03-31 10:41:48,460 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d1ac3440] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-31 10:41:48,820 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:90 - Tomcat initialized with port(s): 8080 (http)
+2022-03-31 10:41:48,844 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-31 10:41:48,857 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2022-03-31 10:41:48,858 [main] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2022-03-31 10:41:48,867 [main] INFO  [org.apache.catalina.core.AprLifecycleListener] DirectJDKLog.java:173 - Loaded APR based Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-03-31 10:41:48,867 [main] INFO  [org.apache.catalina.core.AprLifecycleListener] DirectJDKLog.java:173 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-03-31 10:41:48,868 [main] INFO  [org.apache.catalina.core.AprLifecycleListener] DirectJDKLog.java:173 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-03-31 10:41:48,872 [main] INFO  [org.apache.catalina.core.AprLifecycleListener] DirectJDKLog.java:173 - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-03-31 10:41:49,033 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2022-03-31 10:41:49,034 [main] INFO  [org.springframework.web.context.ContextLoader] ServletWebServerApplicationContext.java:284 - Root WebApplicationContext: initialization completed in 2419 ms
+2022-03-31 10:41:50,388 [main] INFO  [s.d.s.w.PropertySourcedRequestMappingHandlerMapping] PropertySourcedRequestMappingHandlerMapping.java:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-03-31 10:41:50,560 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-31 10:41:50,813 [main] INFO  [s.d.s.web.plugins.DocumentationPluginsBootstrapper] DocumentationPluginsBootstrapper.java:160 - Context refreshed
+2022-03-31 10:41:50,842 [main] INFO  [s.d.s.web.plugins.DocumentationPluginsBootstrapper] DocumentationPluginsBootstrapper.java:163 - Found 1 custom documentation plugin(s)
+2022-03-31 10:41:50,891 [main] INFO  [s.d.spring.web.scanners.ApiListingReferenceScanner] ApiListingReferenceScanner.java:41 - Scanning for api listing references
+2022-03-31 10:41:50,923 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-03-31 10:41:50,940 [main] ERROR [org.apache.catalina.util.LifecycleBase] DirectJDKLog.java:175 - Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:297)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203)
+	at com.wxxx.gis.GisWebApplication.main(GisWebApplication.java:12)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1210)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:585)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2022-03-31 10:41:50,949 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Pausing ProtocolHandler ["http-nio-8080"]
+2022-03-31 10:41:50,950 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Stopping service [Tomcat]
+2022-03-31 10:41:50,957 [main] INFO  [org.apache.catalina.util.LifecycleBase] DirectJDKLog.java:173 - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2022-03-31 10:41:50,958 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Stopping ProtocolHandler ["http-nio-8080"]
+2022-03-31 10:41:50,958 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Destroying ProtocolHandler ["http-nio-8080"]
+2022-03-31 10:41:50,962 [main] INFO  [o.s.b.a.l.ConditionEvaluationReportLoggingListener] ConditionEvaluationReportLoggingListener.java:136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-03-31 10:41:50,969 [main] ERROR [o.s.b.diagnostics.LoggingFailureAnalysisReporter] LoggingFailureAnalysisReporter.java:40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2022-03-31 10:41:50,973 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'applicationTaskExecutor'

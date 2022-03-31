@@ -1,0 +1,26 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: gis-web
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    #  url: jdbc:mysql://192.168.67.22:3306/gis_demo?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://localhost:3306/gis_demo?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+  #  password: 5KVnjy0M6x)
+    password: root
+#  profiles:
+#    active: dev
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  #扫描所有mybatis的xml文件
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+logging:
+  level:
+    root: info
+    sun.rmi: info
