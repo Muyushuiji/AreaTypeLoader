@@ -90,10 +90,4 @@ public class CoveredController {
         return new Result(1, "上传成功", null);
     }
 
-    /**
-     *
-     */
-    private Consumer<List<Covered>> batchInsert() {
-        return covereds -> coveredService.insertBatchSomeColumn(covereds);
-    }
 }
