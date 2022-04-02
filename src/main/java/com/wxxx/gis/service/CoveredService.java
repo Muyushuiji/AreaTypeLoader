@@ -2,7 +2,9 @@ package com.wxxx.gis.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.wxxx.gis.entity.Covered;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -12,10 +14,4 @@ import java.util.List;
  * @date 2022-03-11 16:00:26
  */
 public interface CoveredService extends IService<Covered> {
-
-    void truncate();
-
-    void insertBatchSomeColumn(List<Covered> list);
-
-    List<Covered> getAllCoverd();
 }

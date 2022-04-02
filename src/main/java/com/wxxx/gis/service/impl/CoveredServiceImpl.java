@@ -1,12 +1,18 @@
 package com.wxxx.gis.service.impl;
 
+import com.alibaba.excel.EasyExcel;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.wxxx.gis.entity.Covered;
+import com.wxxx.gis.listener.CoveredExcelListener;
 import com.wxxx.gis.mapper.CoveredMapper;
 import com.wxxx.gis.service.CoveredService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -17,23 +23,4 @@ import java.util.List;
  */
 @Service
 public class CoveredServiceImpl extends ServiceImpl<CoveredMapper, Covered> implements CoveredService {
-
-    @Autowired
-    private CoveredMapper coveredMapper;
-
-    @Override
-    public void truncate() {
-
-    }
-
-    @Override
-    public void insertBatchSomeColumn(List<Covered> list) {
-
-    }
-
-    @Override
-    public List<Covered> getAllCoverd() {
-        return coveredMapper.getAllCoverd();
-    }
-
 }

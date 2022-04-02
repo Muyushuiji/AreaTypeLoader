@@ -14,6 +14,4 @@ import java.util.List;
  */
 @Mapper
 public interface CoveredMapper extends BaseMapper<Covered> {
-
-    List<Covered> getAllCoverd();
 }

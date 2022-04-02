@@ -5,6 +5,7 @@ import com.alibaba.excel.EasyExcel;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.wxxx.gis.common.Result;
 import com.wxxx.gis.entity.Covered;
+import com.wxxx.gis.listener.CoveredExcelListener;
 import com.wxxx.gis.mapper.CoveredMapper;
 import com.wxxx.gis.service.CoveredService;
 import io.swagger.annotations.Api;
@@ -13,12 +14,12 @@ import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.function.Consumer;
 
 
 /**
@@ -39,6 +40,9 @@ public class CoveredController {
 
     @Resource
     private CoveredService coveredService;
+
+    @Resource
+    private CoveredExcelListener coveredExcelListener;
 
     @ApiOperation(value = "列表查询", notes = "列表查询")
     @GetMapping("/list")
@@ -76,11 +80,9 @@ public class CoveredController {
     @ResponseBody
     public Result upload(MultipartFile file) {
         try {
-            coveredService.truncate();
-            List<Covered> list = EasyExcel.read(file.getInputStream()).head(Covered.class).sheet().doReadSync();
-            if (CollectionUtils.isNotEmpty(list)) {
-                coveredService.insertBatchSomeColumn(list);
-            }
+            EasyExcel.read(file.getInputStream(), coveredExcelListener).head(Covered.class).sheet().doReadSync();
+//            AnalysisEventListener<Covered> coveredAnalysisEventListener = ExcelListenerUtils.getListener(this.batchInsert(),10);
+//            EasyExcel.read(file.getInputStream(),Covered.class,coveredAnalysisEventListener).sheet().doReadSync();
         } catch (Exception e) {
             log.error(e.getMessage(), e);
             return new Result(0, "上传失败", null);
@@ -88,11 +90,10 @@ public class CoveredController {
         return new Result(1, "上传成功", null);
     }
 
-
-    @PostMapping("/test")
-    public Result test(){
-        List<Covered> coveredList = coveredService.getAllCoverd();
-        return new Result(1,"查询成功",coveredList);
+    /**
+     *
+     */
+    private Consumer<List<Covered>> batchInsert() {
+        return covereds -> coveredService.insertBatchSomeColumn(covereds);
     }
-
 }

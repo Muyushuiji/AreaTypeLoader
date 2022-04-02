@@ -9,6 +9,7 @@ import com.alibaba.excel.metadata.property.ExcelContentProperty;
 
 /**
  * @author xmm
+ * 转换 弱覆盖里程（km)单位 问题
  */
 public class CustomDisConverter implements Converter<Double> {
     @Override
