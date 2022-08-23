@@ -11,7 +11,7 @@ import lombok.Data;
  * @create: 2022-08-22 18:37
  **/
 @Data
-@TableName("cityGrid")
+@TableName("citygrid")
 public class Grid {
 
     @TableId

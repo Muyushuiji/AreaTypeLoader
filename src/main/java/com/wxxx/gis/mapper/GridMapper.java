@@ -16,4 +16,6 @@ import java.util.List;
 @Mapper
 public interface GridMapper extends BaseMapper<Grid> {
     List<GridVO> findAll();
+
+    List<GridVO> findAllByProvince(String province);
 }

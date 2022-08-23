@@ -24,4 +24,8 @@ public class GridService extends ServiceImpl<GridMapper, Grid> {
     public List<GridVO> findAll() {
         return gridMapper.findAll();
     }
+
+    public List<GridVO> findAllByProvince(String province) {
+        return gridMapper.findAllByProvince(province);
+    }
 }

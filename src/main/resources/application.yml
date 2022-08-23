@@ -33,6 +33,9 @@ geoserver:
   workspace: grid
   boundingBox: latLonBoundingBox
 
+web:
+  path: /usr/local/planSite/
+
 logging:
   level:
     root: info

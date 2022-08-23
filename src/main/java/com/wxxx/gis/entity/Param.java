@@ -85,10 +85,11 @@ public class Param {
     private Double longitude;
     @CsvBindByName(column = "latitude")
     private Double latitude;
-    @CsvBindByName(column = "gridid")
-    private String gridId;
     @CsvBindByName(column = "area_type")
     private String areaType;
-    private String calgridId;
+    @CsvBindByName(column = "province")
+    private String province;
+    @CsvBindByName(column = "city")
+    private String city;
 
 }
