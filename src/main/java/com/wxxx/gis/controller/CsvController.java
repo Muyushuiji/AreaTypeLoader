@@ -47,12 +47,14 @@ public class CsvController {
     @GetMapping("/mock")
     public List<Param> parseByName(MultipartFile file) throws IOException, ParseException {
 
+        log.info("------开始读取csv数据--");
         List<Param> Sourceparams = CsvUtil.parseByName(file);
+        log.info("------读取csv数据结束-------");
         //获取经纬度 判断是否在网格内
 
         List<GridVO> gridVOS = gridService.findAll();
 
-
+        log.info("------开始判断点跟网格的所属关系结束-------");
         WKTReader wktReader = new WKTReader(JTSFactoryFinder.getGeometryFactory());
         for (Param param : Sourceparams) {
             String wktPoint = "POINT (" + param.getLongitude() + " " + param.getLatitude() + ")";
@@ -66,7 +68,7 @@ public class CsvController {
                 Geometry wktgeom = gjson.read(reader);
 
                 if (wktgeom.contains(point)) {
-                    log.info("---存在----");
+                    log.info("---点存在----");
                     //点在多边形内
 //                   param.setGridId(gridVO.getGridId());
                     param.setCalgridId(gridVO.getGridId());

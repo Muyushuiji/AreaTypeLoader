@@ -5,8 +5,8 @@ spring:
     name: gis-web
   servlet:
     multipart:
-      maxFileSize: 1000MB
-      maxRequestSize: 1000MB
+      maxFileSize: 2000MB
+      maxRequestSize: 2000MB
   datasource:
     username: postgres
     #password: root
