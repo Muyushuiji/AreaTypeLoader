@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wxxx.gis.mapper.GridMapper">
+<!--    <select id="findAll" resultType="com.wxxx.gis.entity.GridVO">-->
+<!--        select gridid, ST_AsText(geom) as geom-->
+<!--        from cityGrid;-->
+<!--    </select>-->
+
+    <select id="findAll" resultType="com.wxxx.gis.entity.GridVO">
+        select gridid,st_asgeojson(geom) as geom
+        from cityGrid;
+    </select>
+</mapper>

@@ -3,15 +3,17 @@ server:
 spring:
   application:
     name: gis-web
+  servlet:
+    multipart:
+      maxFileSize: 1000MB
+      maxRequestSize: 1000MB
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    #  url: jdbc:mysql://192.168.67.22:3306/gis_demo?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
-    url: jdbc:mysql://localhost:3306/gis_demo?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
-    username: root
-  #  password: 5KVnjy0M6x)
-    password: root
-#  profiles:
-#    active: dev
+    username: postgres
+    #password: root
+    password: IyYmh%kq
+    driver-class-name: org.postgresql.Driver
+    #url: jdbc:postgresql://localhost:5432/nbiot?useUnicode=true&characterEncoding=utf-8&useSSL=false&nullCatalogMeansCurrent=true&serverTimezone=GMT%2B8
+    url: jdbc:postgresql://192.168.67.27:5432/forestry?useUnicode=true&characterEncoding=utf-8&useSSL=false&nullCatalogMeansCurrent=true&serverTimezone=GMT%2B8
 mybatis:
   mapper-locations: classpath:mapper/*.xml  #扫描所有mybatis的xml文件
 #  configuration:
@@ -19,6 +21,17 @@ mybatis:
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+geoserver:
+  ip: 192.168.67.27
+  #dir: D:\geoserver-2.20.2-bin\data_dir\workspaces
+  #dir: /usr/share/geoserver/data_dir/workspaces
+  dir: /home/geoserver/data_dir/workspaces/workspaces
+  url: http://192.168.67.15:7070/geoserver/
+  username: admin
+  password: geoserver
+  workspace: grid
+  boundingBox: latLonBoundingBox
 
 logging:
   level:
