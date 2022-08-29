@@ -16,10 +16,11 @@ import java.math.BigDecimal;
 @Data
 @TableName("area_beijing")
 public class AreaBeijing {
-
     private Integer gid;
     private Integer objectid1;
     private Integer objectid;
+    private Integer userid;
+    private Integer gridid;
     private String areaType;
     private BigDecimal shapeLeng;
     private String city;

@@ -14,18 +14,5 @@ import java.math.BigDecimal;
 @Data
 @TableName("citygrid")
 public class CityGrid {
-    private Integer gid;
-    private Integer objectid1;
-    private Integer objectid;
-    private Integer userid;
-    private Integer gridid;
-    private String areaType;
-    private BigDecimal shapeLeng;
-    private String city;
-    private String centerX;
-    private String centerY;
-    private String province;
-    private BigDecimal shapeLe1;
-    private BigDecimal shapeArea;
-    private String geom;
+
 }

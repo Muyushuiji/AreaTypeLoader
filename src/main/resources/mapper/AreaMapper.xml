@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wxxx.gis.mapper.AreaMapper">
+    <select id="findAll" resultType="com.wxxx.gis.entity.Area">
+        select area_type, city, center_x, center_y, province, shape_area, st_astext(geom) as geom
+        from area;
+    </select>
+
+    <select id="findByProvinceAndCity" resultType="com.wxxx.gis.entity.Area">
+        select area_type, city, center_x, center_y, province, shape_area, st_astext(geom) as geom
+        from area
+        where province=#{province} and city=#{city};
+    </select>
+</mapper>

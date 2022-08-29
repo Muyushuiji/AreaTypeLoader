@@ -6,14 +6,18 @@
     <!--        from cityGrid;-->
     <!--    </select>-->
 
-    <select id="findAll" resultType="com.wxxx.gis.entity.GridVO">
-        select gridid, st_asgeojson(geom) as geom
+    <select id="findAll" resultType="com.wxxx.gis.entity.CityGridVO">
+        select gridid, st_asgeojson(geom)as geom , province,city
         from citygrid;
     </select>
 
     <select id="findAllByProvince" resultType="com.wxxx.gis.entity.GridVO">
         select gridid, st_asgeojson(geom) as geom
         from citygrid
-        where province = #{province}
+        where province like #{province} and city like #{city}
+    </select>
+
+    <select id="init" resultType="java.util.Map">
+        select
     </select>
 </mapper>

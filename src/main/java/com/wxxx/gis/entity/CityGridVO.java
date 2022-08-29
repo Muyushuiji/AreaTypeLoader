@@ -1,21 +1,21 @@
 package com.wxxx.gis.entity;
 
-import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 /**
  * @program: gis-web
- * @description: 网格
+ * @description:
  * @author: hxl
- * @create: 2022-08-22 18:37
+ * @create: 2022-08-23 19:00
  **/
 @Data
-@TableName("citygrid")
-public class GridVO {
-
+public class CityGridVO {
     private String province;
     private String city;
     private String gridId;
     private String geom;
-
+    private double maxX;
+    private double maxY;
+    private double minX;
+    private double minY;
 }
