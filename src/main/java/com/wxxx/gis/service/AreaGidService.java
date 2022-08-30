@@ -3,6 +3,7 @@ package com.wxxx.gis.service;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.wxxx.gis.entity.AreaGid;
 import com.wxxx.gis.mapper.AreaGidMapper;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -20,11 +21,16 @@ import java.util.List;
 public class AreaGidService extends ServiceImpl<AreaGidMapper, AreaGid> {
     @Resource
     private AreaGidMapper areaGidMapper;
+
     public List<AreaGid> findAll() {
         return areaGidMapper.findAll();
     }
 
     public List<AreaGid> findByProvinceAndCity(String province, String city) {
-        return areaGidMapper.findByProvinceAndCity(province,city);
+        return areaGidMapper.findByProvinceAndCity(province, city);
+    }
+
+    public List<AreaGid> findByProvince(String province) {
+        return areaGidMapper.findByProvince(province);
     }
 }

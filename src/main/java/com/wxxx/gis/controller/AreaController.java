@@ -303,9 +303,9 @@ public class AreaController {
         }
 
         // String pathString = "D:\\code\\2022年8月19日-工参计算\\01.余迪秋2022年8月18日提供的第一份工参5G工参是全的，4G工参不全，没有16进制之类的数据\\merge20220415\\merge20220415\\5Gxin - 副本.csv";
-        String pathString = "C:\\Users\\14818\\Desktop\\Site-Plan\\merge20220415\\5Gxin - 副本.csv";
+        String pathString = "C:\\Users\\14818\\Desktop\\nei-meng-gu-5g-data.csv";
         //String pathOutString = "D:\\code\\2022年8月19日-工参计算\\01.余迪秋2022年8月18日提供的第一份工参5G工参是全的，4G工参不全，没有16进制之类的数据\\merge20220415\\merge20220415\\5GareaType.csv";
-        String pathOutString = "C:\\Users\\14818\\Desktop\\Site-Plan\\merge20220415\\5GareaType.csv";
+        String pathOutString = "C:\\Users\\14818\\Desktop\\5GareaTypeNeimenggu.csv";
         int skipLines = 0;
         FileWriter fw = null;
         BufferedWriter bw = null;
@@ -360,6 +360,9 @@ public class AreaController {
                     String areaType = "";
                     String searchPro = province.replace("\"", "").trim();
                     String searchCity = city.replace("\"", "").trim();
+
+                    searchPro = removeProvinceSuffix(searchPro);
+                    searchCity = removeCiteSuffix(searchCity);
 
                     // 用于统计各个地市的耗时。乱序，以省为单位统计
 //                    if (!activeProvince.trim().equalsIgnoreCase(province.trim())
@@ -507,8 +510,8 @@ public class AreaController {
      */
     private Map<String, List<AreaGid>> initAllAreaGid() throws IOException, ParseException {
         Map<String, List<AreaGid>> map = new HashMap<>();
-        // List<AreaGid> areaGids = areaGidService.findByProvinceAndCity("陕西", "渭南");
-        List<AreaGid> areaGids = areaGidService.findAll();
+         List<AreaGid> areaGids = areaGidService.findByProvince("内蒙古");
+//        List<AreaGid> areaGids = areaGidService.findAll();
         for (AreaGid areaGid : areaGids) {
             //  log.info("Load areaGid table{}-{}", areaGid.getProvince(),areaGid.getCity());
             GeometryFactory geometryFactory = JTSFactoryFinder.getGeometryFactory(null);

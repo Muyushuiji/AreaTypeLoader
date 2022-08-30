@@ -18,4 +18,6 @@ public interface AreaGidMapper extends BaseMapper<AreaGid> {
     List<AreaGid> findAll();
 
     List<AreaGid> findByProvinceAndCity(@Param("province") String province, @Param("city") String city);
+
+    List<AreaGid> findByProvince(@Param("province")String province);
 }
